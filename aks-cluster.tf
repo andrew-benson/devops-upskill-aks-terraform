@@ -32,13 +32,7 @@ resource "azurerm_kubernetes_cluster" "default" {
   role_based_access_control {
     enabled = true
   }
-
-  addon_profile {
-    kube_dashboard {
-      enabled = true
-    }
-  }
-
+  
   tags = {
     environment = "Demo"
   }
